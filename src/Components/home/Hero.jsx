@@ -77,24 +77,24 @@ const Hero = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-row justify-center gap-4 mt-8 sm:mt-12 md:mt-16 lg:mt-20">
+          <div className="flex flex-row justify-center gap-4 mt-8 sm:mt-12 md:mt-16 lg:mt-20 cursor-pointer">
             <button
               onClick={() => setCurrentHero("schedule-a-call")}
-              className="bg-[#4a4a4a] text-white py-3 px-6 rounded-full transition duration-300 hover:opacity-80"
+              className="bg-[#4a4a4a] text-white py-3 px-6 rounded-full transition duration-300 hover:opacity-80 "
             >
               Schedule a Call
             </button>
             <button
               onClick={() => setCurrentHero("see-our-work")}
-              className="bg-[#359dad] text-white py-3 px-6 rounded-full transition duration-300 hover:opacity-80"
+              className="bg-[#359dad] text-white py-3 px-6 rounded-full transition cursor-pointer duration-300 hover:opacity-80"
             >
               See Our Work
             </button>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 flex mb-32">
+          <div className="absolute bottom-0 left-0 right-0 flex mb-32 md:mb-3">
             <div className="w-full relative">
-              <div className="absolute inset-0 bg-white opacity-50 py-12"></div>
-              <div className="relative z-10 -mt-5 logos-container">
+              <div className="absolute inset-0 bg-white opacity-50 h-13 my-5"></div>
+              <div className="relative z-20 -mt-5 logos-container">
                 <div className="logos-wrapper animate-slide items-center">
                   {logos.concat(logos).map((src, index) => (
                     <img key={index} src={src[0]} alt={`Logo ${index + 1}`} className={`${src[1]} mx-10 mt-6`} />
